@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=electerm
+Comment=Terminal/ssh/sftp client(linux, mac, win) based on electron/ssh2/node-pty/xterm/antd/subx and other libs
+Exec="/opt/electerm/electerm"  --no-sandbox %U
+Terminal=false
+Type=Application
+Icon=electerm
+StartupWMClass=electerm
+Categories=Development;
