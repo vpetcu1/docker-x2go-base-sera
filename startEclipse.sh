@@ -12,5 +12,6 @@ export M2_HOME=$TOOL_PATH/apache-maven
 export M2_REPO=$BASE_PATH/.m2/repository
 export PATH=$M2_HOME/bin:$PATH
 export MAVEN_OPTS="-Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true"
+export REBEL_BASE=$HOME/sera/.jrebel
 
 $ECLIPSE_HOME/eclipse -clean -data $HOME/sera/eclipse-workspace

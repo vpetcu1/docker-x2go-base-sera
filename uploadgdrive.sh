@@ -42,7 +42,19 @@ case $operation in
 		mv $operation /home/desktop/sera/
 		/gdrive update 1r2hrUh-u3_DiWPK8_fZZfAyX9s8JI6pi /home/desktop/sera/$operation
 		;;
+	bin.zip)
+		cd /work/ABATech20
+		zip -r $operation bin/
+		mv $operation /home/desktop/sera/
+		/gdrive update 1I704d6TBNBlk7xDh9p9lN-6sYe-OicMM /home/desktop/sera/$operation
+		;;
 	.sqldeveloper.zip)
+		cd /home/desktop/
+		zip -r $operation .sqldeveloper/
+		mv $operation /home/desktop/sera/
+		/gdrive update 1W02kmD5K3wJCplmdv7g1SnhwJWSf58os /home/desktop/sera/$operation
+		;;
+	bin.zip)
 		cd /home/desktop/
 		zip -r $operation .sqldeveloper/
 		mv $operation /home/desktop/sera/

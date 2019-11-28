@@ -17,8 +17,8 @@ RUN apt-get update && apt-get install code -y
 
 #install electerm
 RUN apt-get install gconf2 libappindicator1 -y
-RUN wget https://github.com/electerm/electerm/releases/download/v0.27.50/electerm-0.27.50-linux-amd64.deb -P /
-RUN dpkg -i electerm-0.27.50-linux-amd64.deb
+RUN wget https://github.com/electerm/electerm/releases/download/v0.27.65/electerm-0.27.65-linux-amd64.deb -P /
+RUN dpkg -i electerm-0.27.65-linux-amd64.deb
 RUN chmod 4755 /opt/electerm/chrome-sandbox
 
 #install git
@@ -80,7 +80,7 @@ RUN FILEID='1I704d6TBNBlk7xDh9p9lN-6sYe-OicMM' && /gdrivedl "$FILEID" bin.zip
 RUN cd /work/ABATech20 && jar -xvf /bin.zip
 
 #install .sqldeveloper.zip
-RUN FILEID='1BzjKM6rDWg648KmSzRBCLDO9C3X_MUb-' && /gdrivedl "$FILEID" .sqldeveloper.zip
+RUN FILEID='1W02kmD5K3wJCplmdv7g1SnhwJWSf58os' && /gdrivedl "$FILEID" .sqldeveloper.zip
 RUN cd /home/$REMOTE_USER/ && jar -xvf /.sqldeveloper.zip
 
 #install electerm.zip
@@ -95,7 +95,7 @@ RUN mv -f /tmp/sera.epf /work/ABATech20/sera.epf
 COPY ["startEclipse.sh", "/home/$REMOTE_USER/Desktop"]
 RUN chmod +x /home/$REMOTE_USER/Desktop/startEclipse.sh
 
-#copy sqldeveloper
+#copy sqldeveloper.sh
 COPY ["sqldeveloper.sh", "/home/$REMOTE_USER/Desktop"]
 RUN chmod +x /home/$REMOTE_USER/Desktop/sqldeveloper.sh
 
@@ -109,6 +109,10 @@ RUN chmod +x /home/$REMOTE_USER/Desktop/electerm.desktop
 
 #copy .profile
 COPY [".profile", "/home/$REMOTE_USER"]
+
+#copy known_hosts
+RUN mkdir -p /home/$REMOTE_USER/.ssh
+COPY ["known_hosts", "/home/$REMOTE_USER/.ssh"]
 
 #permissions 
 RUN chmod 777 -R /work
