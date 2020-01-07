@@ -17,8 +17,8 @@ RUN apt-get update && apt-get install code -y
 
 #install electerm
 RUN apt-get install gconf2 libappindicator1 -y
-RUN wget https://github.com/electerm/electerm/releases/download/v0.27.65/electerm-0.27.65-linux-amd64.deb -P /
-RUN dpkg -i electerm-0.27.65-linux-amd64.deb
+RUN wget https://github.com/electerm/electerm/releases/download/v0.27.100/electerm-0.27.100-linux-amd64.deb -P /
+RUN dpkg -i electerm-0.27.100-linux-amd64.deb
 RUN chmod 4755 /opt/electerm/chrome-sandbox
 
 #install git
