@@ -12,11 +12,11 @@ case $operation in
 		mv $operation /home/desktop/sera/
 		/gdrive update 1ryEp8GQgbXF2nZTMATkSmk0cEuRwEbtD /home/desktop/sera/$operation
 		;;
-	glassfish3.zip)
+	payara.zip)
 		cd /work/ABATech20/tools
-		zip -r $operation glassfish3/
+		zip -r $operation payara/
 		mv $operation /home/desktop/sera/
-		/gdrive update 1U0bU_hL1cjtWcK2GirGPzsdxWWRN9Krc /home/desktop/sera/$operation
+		/gdrive update 1e-8Vz-zGJxEevrUc9k2pUfKvL5KKKcCy /home/desktop/sera/$operation
 		;;
 	Java.zip)
 		cd /work/ABATech20/tools
@@ -54,14 +54,26 @@ case $operation in
 		mv $operation /home/desktop/sera/
 		/gdrive update 1W02kmD5K3wJCplmdv7g1SnhwJWSf58os /home/desktop/sera/$operation
 		;;
-	bin.zip)
-		cd /home/desktop/
-		zip -r $operation .sqldeveloper/
+	electerm.zip)
+		cd /home/desktop/.config
+		zip -r $operation electerm/ electerm-localstorage.json electerm-user-config.json
 		mv $operation /home/desktop/sera/
-		/gdrive update 1BzjKM6rDWg648KmSzRBCLDO9C3X_MUb- /home/desktop/sera/$operation
+		/gdrive update 1yhyvlJ9h8QENLv8FwAup4i3GyGqctIC4 /home/desktop/sera/$operation
+		;;
+	chromium.zip)
+		cd /home/desktop/.config
+		zip -r $operation chromium/
+		mv $operation /home/desktop/sera/
+		/gdrive update 1NLAtxrcmGp_1ZZGWvHEMgUurprhbhpVB /home/desktop/sera/$operation
 		;;
 	sera.epf)
-		/gdrive update 1BzjKM6rDWg648KmSzRBCLDO9C3X_MUb- /home/desktop/sera/$operation
+		/gdrive update 1Rxj7YM4L9RIWJ_UxcccS2PjArQsjxgJU /home/desktop/sera/$operation
+		;;
+	SERA_Clean_Up.xml)
+		/gdrive update 129M38eegcT8uRGXzyR0ShGNtnMP30SYW /home/desktop/sera/$operation
+		;;
+	SERA_Formatter.xml.epf)
+		/gdrive update 1_SgOTZJ4Y0RayfIn_gwxGE7PO_lJsat2 /home/desktop/sera/$operation
 		;;
 	*)
 		echo "Must pass one of the args .sqldeveloper.zip|apache-maven.zip|pull"
