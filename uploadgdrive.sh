@@ -12,11 +12,11 @@ case $operation in
 		mv $operation /home/desktop/sera/
 		/gdrive update 1ryEp8GQgbXF2nZTMATkSmk0cEuRwEbtD /home/desktop/sera/$operation
 		;;
-	glassfish3.zip)
+	payara.zip)
 		cd /work/ABATech20/tools
-		zip -r $operation glassfish3/
+		zip -r $operation payara/
 		mv $operation /home/desktop/sera/
-		/gdrive update 1U0bU_hL1cjtWcK2GirGPzsdxWWRN9Krc /home/desktop/sera/$operation
+		/gdrive update 1e-8Vz-zGJxEevrUc9k2pUfKvL5KKKcCy /home/desktop/sera/$operation
 		;;
 	Java.zip)
 		cd /work/ABATech20/tools
@@ -54,14 +54,38 @@ case $operation in
 		mv $operation /home/desktop/sera/
 		/gdrive update 1W02kmD5K3wJCplmdv7g1SnhwJWSf58os /home/desktop/sera/$operation
 		;;
-	bin.zip)
+	.postman.zip)
 		cd /home/desktop/
-		zip -r $operation .sqldeveloper/
+		zip -r $operation .postman/
 		mv $operation /home/desktop/sera/
-		/gdrive update 1BzjKM6rDWg648KmSzRBCLDO9C3X_MUb- /home/desktop/sera/$operation
+		/gdrive update 17gN8OM3Iph1k_XB3y3JtPeec3RotpssE /home/desktop/sera/$operation
+		;;
+	snowflake-ssh.zip)
+		cd /home/desktop/
+		zip -r $operation snowflake-ssh/
+		mv $operation /home/desktop/sera/
+		/gdrive update 1c5DUUt5iUdBDffW8og9EZmJAbIsKvRiG /home/desktop/sera/$operation
+		;;
+	google-chrome.zip)
+		cd /home/desktop/.config
+		zip -r $operation google-chrome/
+		mv $operation /home/desktop/sera/
+		/gdrive update 1AiyuA54anhJ0jxSE87qRyY5a04wDcHzS /home/desktop/sera/$operation
+		;;
+	barracudavpn.zip)
+		cd /etc/
+		zip -r $operation barracudavpn/
+		mv $operation /home/desktop/sera/
+		/gdrive update 1XZ0TM226lJFl5gM0VvpM64gA37z2QWCt /home/desktop/sera/$operation
 		;;
 	sera.epf)
-		/gdrive update 1BzjKM6rDWg648KmSzRBCLDO9C3X_MUb- /home/desktop/sera/$operation
+		/gdrive update 1Rxj7YM4L9RIWJ_UxcccS2PjArQsjxgJU /home/desktop/sera/$operation
+		;;
+	SERA_Clean_Up.xml)
+		/gdrive update 129M38eegcT8uRGXzyR0ShGNtnMP30SYW /home/desktop/sera/$operation
+		;;
+	SERA_Formatter.xml.epf)
+		/gdrive update 1_SgOTZJ4Y0RayfIn_gwxGE7PO_lJsat2 /home/desktop/sera/$operation
 		;;
 	*)
 		echo "Must pass one of the args .sqldeveloper.zip|apache-maven.zip|pull"
